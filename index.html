@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yajurva - crafting tomorrow inspired by past</title>
+    <link rel="icon" href="img/l_y_2.ico" type="image/x-icon">
+    <meta name="description" content="Yajurva is crafting innovative solutions for tomorrow, drawing inspiration 
+    from the wisdom of the past. Explore our services and discover how we can help you build a better future.">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <!--links that imports fonts from font share for website -->
+    <!-- Fontshare Fonts -->
+    <link href="https://api.fontshare.com/v2/css?f[]=chillax@1&display=swap" rel="stylesheet" />
+    <link href="https://api.fontshare.com/v2/css?f[]=general-sans@1&display=swap" rel="stylesheet" />
+    <link href="https://api.fontshare.com/v2/css?f[]=panchang@1&display=swap" rel="stylesheet" />
+    <link href="https://api.fontshare.com/v2/css?f[]=bevellier@1&display=swap" rel="stylesheet" />
+    <link href="https://api.fontshare.com/v2/css?f[]=bonny@1&display=swap" rel="stylesheet" />
+    <link href="https://api.fontshare.com/v2/css?f[]=roundo@1&display=swap" rel="stylesheet" />
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Rajdhani&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Epilogue&display=swap" rel="stylesheet" />
+
+</head>
+
+<body>
+    <img class="image-gradient" src="./img/gradient.png" alt="gradient">
+    <div class="layer-blur"></div>
+
+    <img class="gradient-right" src="./img/gradient.png" alt="">
+    <div class="layer-blur-right"></div>
+
+    <div class="container">
+        <header>
+            <img data-aos="fade-right" data-aos-duration="1500" class="logo-yajurva" src="./img/l_y_2.png" alt="logo">
+
+            <nav>
+                <a data-aos="fade-up" data-aos-duration="3100" href="#content">HOME</a>
+                <a data-aos="fade-up" data-aos-duration="3100" href="about.html">ABOUT</a>
+                <a data-aos="fade-up" data-aos-duration="3400" href="services.html">SERVICES</a>
+                <a data-aos="fade-up" data-aos-duration="3500" href="team.html">FACE OF YAJURVA</a>
+                <a data-aos="fade-up" data-aos-duration="4000" href="contactUs.html">CONTACT US</a>
+            </nav>
+            <button data-aos="fade-up" data-aos-duration="4000" class="hamburger" id="hamburger-btn">
+                &#9776;
+            </button>
+
+
+            <!--   <button data-aos="fade-down" data-aos-duration="1500" class ="btn-signing">SIGN UP/LOGIN</button>  -->
+        </header>
+
+        <main>
+            <div class="content"> <!-- 1st div -->
+                <!--2nd div -->
+                <div data-aos="fade-zoom-in" data-aos-easing="ease-in-back" data-aos-delay="300" data-aos-offset="0"
+                    data-aos-duration="800" class="tag-box">
+                    <div class="tag">Alpha Release &wedge;</div>
+                </div>
+                <h1 data-aos="fade-zoom-in" data-aos-easing="ease-in-back" data-aos-delay="300" data-aos-offset="0"
+                    data-aos-duration="1100">From Code to Circuits,<br>We Build It All</h1>
+                <p data-aos="fade-zoom-in" data-aos-easing="ease-in-back" data-aos-delay="300" data-aos-offset="0"
+                    data-aos-duration="1100" class="description">From stunning websites to smart hardware builds,<br>
+                    One Line Of Code, One Circuit At a Time.
+                    <br> Join us as we shape what’s next in tech.<br>
+
+                </p>
+                <!--
+                <div data-aos="fade-zoom-in"
+                data-aos-easing="ease-in-back"
+                data-aos-delay="300"
+                data-aos-offset="0" data-aos-duration="1600" class="buttons">
+                    <a href="#" class="btn-get-started">Documentation &gt;</a>
+                    <a href="#" class="btn-signing-main">GetStarted &gt;</a>
+                </div>
+            -->
+            </div>
+
+        </main>
+    </div>
+
+    <footer>
+        <p>Copyright &copy; 2025 Yajurva - All Rights Reserved</p>
+    </footer>
+
+    <div >
+                <video data-aos="fade-up" data-aos-duration="3500" src="img/web2.mp4" class="video-man" type="video/mp4 " autoplay="true" loop muted ></video>
+            </div>
+
+
+
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+
+    <script>
+        const hamburgerBtn = document.getElementById("hamburger-btn");
+        const nav = document.querySelector("nav");
+
+        hamburgerBtn.addEventListener("click", () => {
+            nav.classList.toggle("active");
+        });
+    </script>
+
+
+</body>
+
+</html>

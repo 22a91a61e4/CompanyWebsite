@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Us - MyWebPage</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="icon" href="img/l_y_2.ico" type="image/x-icon">
+    <meta name="description" content="Yajurva is crafting innovative solutions for tomorrow, drawing inspiration 
+    from the wisdom of the past. Explore our services and discover how we can help you build a better future.">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+<!-- Fontshare Fonts -->
+    <link href="https://api.fontshare.com/v2/css?f[]=chillax@1&display=swap" rel="stylesheet"/>
+    <link href="https://api.fontshare.com/v2/css?f[]=general-sans@1&display=swap" rel="stylesheet"/>
+    <link href="https://api.fontshare.com/v2/css?f[]=panchang@1&display=swap" rel="stylesheet"/>
+    <link href="https://api.fontshare.com/v2/css?f[]=bevellier@1&display=swap" rel="stylesheet"/>
+    <link href="https://api.fontshare.com/v2/css?f[]=bonny@1&display=swap" rel="stylesheet"/>
+    <link href="https://api.fontshare.com/v2/css?f[]=roundo@1&display=swap" rel="stylesheet"/>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Rajdhani&display=swap" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Epilogue&display=swap" rel="stylesheet"/>
+  </head>
+  <body>
+    <img class="image-gradient" src="./img/gradient.png" alt="gradient" />
+    <div class="layer-blur"></div>
+
+    <img class="gradient-right" src="./img/gradient.png" alt="" />
+    <div class="layer-blur-right"></div>
+
+    <div class="container">
+      <header>
+        <img class="logo-yajurva" src="./img/l_y_2.png" alt="logo" />
+        <nav>
+          <a href="index.html">HOME</a>
+          <a href="about.html">ABOUT</a>
+          <a href="services.html">SERVICES</a>
+          <a href="team.html">FACE OF YAJURVA</a>
+          <a href="contactUs.html">CONTACT US</a>
+        </nav>
+        <button class="hamburger" id="hamburger-btn">
+            &#9776;
+            </button>
+        <!-- <button class="btn-signing">SIGN UP/LOGIN</button> -->
+      </header>
+
+      <main>
+        <section
+          class="contact-section"
+          data-aos="fade-up"
+          data-aos-duration="1000"
+        >
+          <h1>Contact Us</h1>
+          <div class="contact-container">
+            <!-- LEFT BOX -->
+            <div class="contact-info">
+              <h2 style="color: rgb(223, 208, 184)">Reach Us At</h2>
+              <p style="font-family: 'epilogue'">
+                <strong style="color: rgb(225, 255, 187)">📍 Address:</strong
+                ><br />
+                Ayodhyaramapuram,Samalkota, <br />
+                East Godavari, Andhra Pradesh, 533440
+              </p>
+              <br />
+              <p style="font-family: 'epilogue'">
+                <strong style="color: rgb(225, 255, 187)">📞 Phone:</strong
+                ><br />
+                +91 8125850430
+              </p>
+              <br />
+              <p style="font-family: 'epilogue'">
+                <strong style="color: rgb(225, 255, 187)">📧 Email:</strong
+                ><br />
+                yajurva.team@gmail.com
+              </p>
+              <div class="social-links">
+                <a href="https://instagram.com/yourpage" target="_blank"
+                  ><i class="fab fa-instagram"></i
+                ></a>
+                <a
+                  href="https://linkedin.com/company/yourcompany"
+                  target="_blank"
+                  ><i class="fab fa-linkedin-in"></i
+                ></a>
+                <a href="https://twitter.com/yourhandle" target="_blank"
+                  ><i class="fab fa-x-twitter"></i
+                ></a>
+                <a href="https://facebook.com/yourpage" target="_blank"
+                  ><i class="fab fa-facebook-f"></i
+                ></a>
+              </div>
+            </div>
+
+            <!-- RIGHT BOX -->
+            <div class="contact-form">
+              <h2 style="color: rgb(223, 208, 184); font-family: 'rajdhani'">
+                Message Us
+              </h2>
+              <h3>
+                We'd love to hear from you, Reach out using the form or details
+                below.<br />
+              </h3>
+              <form action="/contact" method="POST" id="contactForm">
+                <input type="text" name="name" placeholder="Your Name" required />
+                <input type="email" name="email" placeholder="Your Email" required />
+                <textarea placeholder="Your Message" name="message" required></textarea>
+                <button type="submit" onclick="resetFunc()">Send Message</button>
+              </form>
+              <div id="responseMessage"></div>
+            </div>
+          </div>
+        </section>
+      </main>
+      <footer>
+            <p>Copyright &copy; 2025 Yajurva - All Rights Reserved</p>
+        </footer>
+    </div>
+    
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+    <script>
+  document.getElementById('contactForm').addEventListener('submit', async function (e) {
+    e.preventDefault(); // prevent page reload
+
+    const formData = new FormData(this);
+
+    const response = await fetch('/contact', {
+      method: 'POST',
+      body: new URLSearchParams(formData),
+      headers: {
+        'Content-Type': 'application/x-www-form-urlencoded'
+      }
+    });
+
+    const resultText = await response.text();
+
+    // Show popup with result
+    alert(resultText.replace(/<\/?[^>]+(>|$)/g, "")); // remove HTML tags
+    document.getElementById('responseMessage').innerHTML = resultText;
+    this.reset(); // reset the form
+  });
+
+</script>
+<script>
+  const hamburgerBtn = document.getElementById("hamburger-btn");
+  const nav = document.querySelector("nav");
+
+  hamburgerBtn.addEventListener("click", () => {
+    nav.classList.toggle("active");
+  });
+</script>
+  </body>
+ 
+  
+</html>

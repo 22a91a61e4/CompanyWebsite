@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UI/UX Projects - Coming Soon</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="icon" href="img/l_y_2.ico" type="image/x-icon">
+    <meta name="description" content="Yajurva is crafting innovative solutions for tomorrow, drawing inspiration 
+    from the wisdom of the past. Explore our services and discover how we can help you build a better future.">
+    <!-- Fontshare Fonts -->
+    <link href="https://api.fontshare.com/v2/css?f[]=chillax@1&display=swap" rel="stylesheet"/>
+    <link href="https://api.fontshare.com/v2/css?f[]=general-sans@1&display=swap" rel="stylesheet"/>
+    <link href="https://api.fontshare.com/v2/css?f[]=panchang@1&display=swap" rel="stylesheet"/>
+    <link href="https://api.fontshare.com/v2/css?f[]=bevellier@1&display=swap" rel="stylesheet"/>
+    <link href="https://api.fontshare.com/v2/css?f[]=bonny@1&display=swap" rel="stylesheet"/>
+    <link href="https://api.fontshare.com/v2/css?f[]=roundo@1&display=swap" rel="stylesheet"/>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Rajdhani&display=swap" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Epilogue&display=swap" rel="stylesheet"/>
+</head>
+<body>
+    
+    <img class="image-gradient" src="./img/gradient.png" alt="gradient">
+    <div class="layer-blur"></div>
+    <div class="container">
+        <header>
+            <img class="logo-yajurva" src="./img/l_y_2.png" alt="logo">
+            <nav>
+                <a href="index.html">HOME</a>
+                <a href="about.html">ABOUT</a>
+                <a href="services.html">SERVICES</a>
+                <a href="team.html">FACE OF YAJURVA</a>
+                <a href="contactUs.html">CONTACT US</a>
+            </nav>
+            <button class="hamburger" id="hamburger-btn">
+            &#9776;
+            </button>
+        </header>
+
+        <br>
+        <center>
+        <main>
+            <div class="coming-soon">
+                <div data-aos="fade-in" data-aos-duration="1000" class="tagg-box">
+                    <div class="tagg">UI/UX Projects &hearts;</div>
+                </div>
+                <br>
+                <h1 data-aos="fade-up" data-aos-duration="1000">Exciting Projects Coming Soon!</h1>
+                <p data-aos="fade-up" data-aos-delay="300" data-aos-duration="1000">
+                    We’re currently crafting some amazing UI/UX projects just for you.<br>
+                    Stay tuned as we prepare to launch innovative, user-centric experiences!
+                </p>
+                <img src="./img/comingSoon.jpg" alt="Coming Soon" class="coming-soon-image" data-aos="zoom-in" data-aos-delay="500" data-aos-duration="1000">
+            </div>
+        </main>
+        </center>
+    </div>
+ <footer>
+            <p>Copyright &copy; 2025 Yajurva - All Rights Reserved</p>
+        </footer>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    <script>
+  const hamburgerBtn = document.getElementById("hamburger-btn");
+  const nav = document.querySelector("nav");
+
+  hamburgerBtn.addEventListener("click", () => {
+    nav.classList.toggle("active");
+  });
+</script>
+</body>
+</html>

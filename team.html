@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+     
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Team Page</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="icon" href="img/l_y_2.ico" type="image/x-icon">
+    <meta name="description" content="Yajurva is crafting innovative solutions for tomorrow, drawing inspiration
+     from the wisdom of the past. Explore our services and discover how we can help you build a better future.">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <!-- Fontshare Fonts -->
+    <link href="https://api.fontshare.com/v2/css?f[]=chillax@1&display=swap" rel="stylesheet"/>
+    <link href="https://api.fontshare.com/v2/css?f[]=general-sans@1&display=swap" rel="stylesheet"/>
+    <link href="https://api.fontshare.com/v2/css?f[]=panchang@1&display=swap" rel="stylesheet"/>
+    <link href="https://api.fontshare.com/v2/css?f[]=bevellier@1&display=swap" rel="stylesheet"/>
+    <link href="https://api.fontshare.com/v2/css?f[]=bonny@1&display=swap" rel="stylesheet"/>
+    <link href="https://api.fontshare.com/v2/css?f[]=roundo@1&display=swap" rel="stylesheet"/>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Rajdhani&display=swap" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Epilogue&display=swap" rel="stylesheet"/>
+  </head>
+  <body>
+    <img class="image-gradient" src="./img/gradient.png" alt="gradient" />
+    <div class="layer-blur"></div>
+
+    <img class="gradient-right" src="./img/gradient.png" alt="" />
+    <div class="layer-blur-right"></div>
+    
+
+    <div class="container">
+      <header>
+        <img class="logo-yajurva" src="./img/l_y_2.png" alt="logo" />
+        <nav >
+          <a href="index.html">HOME</a>
+          <a href="about.html">ABOUT</a>
+          <a href="services.html">SERVICES</a>
+          <a href="team.html">FACE OF YAJURVA</a>
+          <a href="contactUs.html">CONTACT US</a>
+        </nav>
+        <button class="hamburger" id="hamburger-btn">
+            &#9776;
+            </button>
+        <!-- <button class="btn-signing">SIGN UP/LOGIN</button> -->
+      </header>
+
+      <main>
+    <section data-aos="fade-down" data-aos-duration="1500" class="team-container">
+      <div class="team-header">
+        <h1>Our Team</h1>
+        <p style="font-family: 'epilogue';">Meet the people behind our company.</p>
+      </div>
+
+      <div data-aos="fade-down" data-aos-duration="2000"class="team-grid">
+        <div class="team-member">
+          <img src="./img/bhuvan.jpg" alt="P.Bhuvan" class="member-photo" />
+          <h3 class="member-name">P.Bhuvan</h3>
+          <p class="member-role">C.E.O</p>
+          <p class="member-bio"></p>
+        </div>
+
+        <div class="team-member">
+          <img src="./img/hemanth.jpg" alt="T.Hemanth kumar" class="member-photo" />
+          <h3 class="member-name">T.Hemanth Kumar</h3>
+          <p class="member-role">Founder</p>
+          <p class="member-bio"></p>
+        </div>
+      </div>
+    </section>
+    </main>
+     <footer>
+            <p>Copyright &copy; 2025 Yajurva - All Rights Reserved</p>
+        </footer>
+      <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+
+  <script>
+  const hamburgerBtn = document.getElementById("hamburger-btn");
+  const nav = document.querySelector("nav");
+
+  hamburgerBtn.addEventListener("click", () => {
+    nav.classList.toggle("active");
+  });
+</script>
+  </body>
+</html>

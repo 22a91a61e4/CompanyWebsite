@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Our Services</title>
+    <link rel="icon" href="img/l_y_2.ico" type="image/x-icon">
+    <meta name="description" content="Yajurva is crafting innovative solutions for tomorrow, drawing inspiration 
+    from the wisdom of the past. Explore our services and discover how we can help you build a better future.">
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <!-- Fontshare Fonts -->
+    <link href="https://api.fontshare.com/v2/css?f[]=chillax@1&display=swap" rel="stylesheet"/>
+    <link href="https://api.fontshare.com/v2/css?f[]=general-sans@1&display=swap" rel="stylesheet"/>
+    <link href="https://api.fontshare.com/v2/css?f[]=panchang@1&display=swap" rel="stylesheet"/>
+    <link href="https://api.fontshare.com/v2/css?f[]=bevellier@1&display=swap" rel="stylesheet"/>
+    <link href="https://api.fontshare.com/v2/css?f[]=bonny@1&display=swap" rel="stylesheet"/>
+    <link href="https://api.fontshare.com/v2/css?f[]=roundo@1&display=swap" rel="stylesheet"/>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Rajdhani&display=swap" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Epilogue&display=swap" rel="stylesheet"/>
+  </head>
+  <body>
+    <img class="image-gradient" src="./img/gradient.png" alt="gradient" />
+    <div class="layer-blur"></div>
+
+    <img class="gradient-right" src="./img/gradient.png" alt="" />
+    <div class="layer-blur-right"></div>
+
+    <div class="container">
+      <header>
+        <img class="logo-yajurva" src="./img/l_y_2.png" alt="logo" />
+        <nav>
+          <a href="index.html">HOME</a>
+          <a href="about.html">ABOUT</a>
+          <a href="services.html">SERVICES</a>
+          <a href="team.html">FACE OF YAJURVA</a>
+          <a href="contactUs.html">CONTACT US</a>
+        </nav>
+        
+        <button class="hamburger" id="hamburger-btn">
+            &#9776;
+            </button>
+        <!-- <button class="btn-signing">SIGN UP/LOGIN</button> -->
+      </header>
+      <br />
+      <main>
+        <div class="service">
+          <div
+            data-aos-easing="ease-in-back"
+            data-aos-delay="300"
+            data-aos-offset="0"
+            data-aos-duration="800"
+            class="tagg-box"
+          >
+            <div class="tagg">What We Offer &hearts;</div>
+          </div>
+          <br />
+
+          <h1
+            data-aos="fade-zoom-out"
+            data-aos-easing="ease-in-back"
+            data-aos-offset="0"
+            data-aos-duration="1000"
+          >
+            Explore Our Services
+          </h1>
+          <br />
+          <p
+            data-aos="fade-zoom-in"
+            data-aos-easing="ease-in-back"
+            data-aos-offset="0"
+            data-aos-duration="1000"
+          >
+            Unlock your brand’s potential with our expert services.<br />
+            Discover how we elevate your online presence and drive results.
+          </p>
+        </div>
+
+        <div class="services-section">
+          <a href="uiux-projects.html" class="service-card-link">
+            <div
+              class="service-card"
+              data-aos="fade-left"
+              data-aos-duration="1000"
+            >
+              <h2>Ui/Ux</h2>
+              <img class="marketing" src="./img/uiux.jpg" alt="UI/UX Design" />
+              <p>Making digital experiences seamless and intuitive</p>
+            </div>
+          </a>
+          <a href="website-designing-projects.html" class="service-card-link">
+            <div
+              class="service-card"
+              data-aos="fade-down"
+              data-aos-duration="1000"
+            >
+              <h2>Website Designing</h2>
+              <img
+                class="website_design"
+                src="./img/web-des.jpg"
+                alt="image-gradient"
+              />
+              <p>
+                Custom designs that combine creativity and functionality for
+                impactful user experiences.
+              </p>
+            </div></a
+          >
+          <a href="boosting-website-projects.html" class="service-card-link">
+            <div
+              class="service-card"
+              data-aos="fade-right"
+              data-aos-duration="1000"
+            >
+              <h2>Boosting Website</h2>
+              <img class="boost_website" src="./img/boost.jpg" alt="image-gradient" />
+              <p>
+                We help websites grow through powerful SEO, speed optimization,
+                creative branding, and targeted marketing strategies—crafted to
+                drive real results and real visitors.
+              </p>
+            </div></a
+          >
+        </div>
+      </main>
+    </div>
+     <footer>
+            <p>Copyright &copy; 2025 Yajurva - All Rights Reserved</p>
+        </footer>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+
+    <script>
+  const hamburgerBtn = document.getElementById("hamburger-btn");
+  const nav = document.querySelector("nav");
+
+  hamburgerBtn.addEventListener("click", () => {
+    nav.classList.toggle("active");
+  });
+</script>
+  </body>
+</html>
